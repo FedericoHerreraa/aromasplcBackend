@@ -5,7 +5,10 @@ import cors from 'cors'
 import { connectDb } from './db.js'
 
 const app = express()
-app.use(cors())
+app.use(cors({
+    origin: 'https://aromasplc.vercel.app',
+    credentials: true
+}))
 app.use(express.json())
 
 app.use('/api', mailRouter)
