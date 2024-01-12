@@ -40,7 +40,6 @@ export const sendUsPurchaseEmail = async (req, res) => {
     
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) return res.status(500).json({ error: "Algo salio mal con el envio de mail" })
-        console.log(info)
         res.json(info)
     })
 } 
@@ -74,7 +73,6 @@ export const sendThemPurchaseEmail = async (req,res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) return res.status(500).json({ error: "Algo salio mal con el envio de mail" })
-        console.log(info)
         res.json(info)
     })
 }
@@ -113,7 +111,6 @@ export const sendUsQuestionEmail = async (req, res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) return res.status(500).json({ error: "Algo salio mal con el envio de mail" })
-        console.log(info)
         res.json(info)
     })
 
@@ -149,7 +146,6 @@ export const sendThemQuestionEmail = async (req, res) => {
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) return res.status(500).json({ error: "Algo salio mal con el envio de mail" })
-        console.log(info)
         res.json(info)
     })
 

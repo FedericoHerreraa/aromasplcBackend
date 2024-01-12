@@ -15,6 +15,11 @@ app.use('/api', mailRouter)
 
 app.use('/api', prodRoutes)
 
+app.use('/wakeUp', (req, res) => {
+    console.log(res)
+    res.json('hi')
+})
+
 connectDb()
 app.listen(4000) 
 console.log('Server listening on port http://localhost:4000')
