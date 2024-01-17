@@ -19,7 +19,7 @@ app.use('/wakeUp', (req, res) => {
     console.log(res)
     res.json('hi')
 })
-
+//conexion con la base de datos
 connectDb()
 app.listen(4000) 
 console.log('Server listening on port http://localhost:4000')
