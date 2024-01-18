@@ -25,7 +25,7 @@ export const sendUsPurchaseEmail = async (req, res) => {
     const mailOptions = {
         from: info.email,
         to: 'aromass.plc@gmail.com',
-        subject: `${info.nombre} ha realizado una compra`,
+        subject: `${info.email} ha realizado una compra`,
         html: `
             <div>
                 <h3>${info.nombre} ha realizado una compra desde la direccion ${info.direccion}</h3>
